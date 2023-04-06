@@ -15,9 +15,10 @@ def GoAskAI_ChatCompletion(prompt):
     return raw_return['choices'][0]['message']['content']
 
 if __name__ == '__main__':
+    print("Welcome to the GoAskAI chatbot!")
     while True:
-        prompt = input("\nenter a prompt for the AI model to respond to, or type 'exit' to stop:\n")
+        prompt = input("\nEnter a prompt for the GoAskAI chatbot to answer, or type 'exit' to stop:\n")
         if prompt == "exit":
             break
-        print(GoAskAI_ChatCompletion(prompt))
-    print("Good-bye!")
+        print("GoAskAI chatbot says:", GoAskAI_ChatCompletion(prompt))
+    print("GoAskAI chatbot says: Good-bye! Hope to chat again soon")
